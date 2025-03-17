@@ -35,7 +35,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>Hello {m.from_user.mention} 👋\n\n➨ I am Txt to Video Uploader Bot.</b>")
+    await m.reply_text(f"<b>Hello {m.from_user.mention} 👋\n\n➨ I am a Text to Video Uploader Bot. I can download videos from URLs in a text file and upload them to Telegram.</b>")
   
 
 @bot.on_message(filters.command("stop"))
